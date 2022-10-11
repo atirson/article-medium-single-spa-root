@@ -51,11 +51,23 @@
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@medium/root-config": "//localhost:9000/medium-root-config.js",
-        "@medium/parcel": "http://localhost:8080/medium-medium.js"
+        "@medium/parcel": "https://unpkg.com/@atirson/medium@1.0.0/dist/medium-medium.js"
       }
     }
   </script>
   <% } %>
+
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+        "@medium/root-config": "//localhost:9000/medium-root-config.js",
+        "@medium/parcel": "https://unpkg.com/@atirson/medium@1.0.0/dist/medium-medium.js"
+      }
+    }
+  </script>
+
+  
 
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
